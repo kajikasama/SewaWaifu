@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    background-color: white;
+}
+.banner img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.pilih-fandom img{
+    max-height: 100px;
+    border-radius: 12px;
+}
+.pilih-fandom .card{
+    border-radius: 12px;
+}
+.best-waifu{
+    border-radius: 15px;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding: 0px;
+}
+.breadcrumb .active{
+    font-weight: bold;
+    color: black;
+}
+
+.btn-dark{
+    border-radius: 10px;
+}
