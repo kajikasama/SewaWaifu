@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::livewire('/', 'home')->name('home');
 Route::livewire('/products', 'product-index')->name('products');
+Route::livewire('/products/fandom/{fandomid}', 'product-fandom')->name('products.fandom');
+Route::livewire('/products/{id}', 'product-detail')->name('products.detail');

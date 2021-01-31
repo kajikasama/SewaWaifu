@@ -19,7 +19,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							@foreach($fandoms as $fandom)
-							<a class="dropdown-item" href="#">{{ $fandom->nama }}</a>
+							<a class="dropdown-item" href="{{ route('products.fandom', $fandom->id) }}">{{ $fandom->nama }}</a>
 							@endforeach
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="{{ route('products') }}">Semua Fandom</a>

@@ -1,31 +1,42 @@
-body{
+body {
     font-family: 'Roboto', 'Montserrat', sans-serif;
     background-color: white;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     border-radius: 12px;
 }
 
-.pilih-fandom img{
+.pilih-fandom img {
     max-height: 100px;
     border-radius: 12px;
 }
-.pilih-fandom .card{
+
+.pilih-fandom .card {
     border-radius: 12px;
 }
-.best-waifu{
+
+.best-waifu {
     border-radius: 15px;
 }
-.breadcrumb{
+
+.breadcrumb {
     background-color: transparent;
     padding: 0px;
 }
-.breadcrumb .active{
+
+.breadcrumb .active {
     font-weight: bold;
     color: black;
 }
 
-.btn-dark{
+.btn-dark {
     border-radius: 10px;
+}
+
+.gambar-product {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border-width: 0px;
 }

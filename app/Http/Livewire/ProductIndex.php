@@ -9,11 +9,25 @@ use App\Product;
 class ProductIndex extends Component
 {
     use WithPagination;
+
+    public $search;
+    protected $updateQuery = ['search'];
+
+    public function updatingSearch()
+    {
+        $this->resetPage();
+    }
     public function render()
     {
-        $product = Product::paginate(6);
+        if ($this->search) {
+            $products = Product::where('nama', 'like', '%' . $this->search . '%')->paginate(8);
+        } else {
+            $products = Product::paginate(6);
+        }
+
         return view('livewire.product-index', [
-            'products' => $product
+            'products' => $products,
+            'title' => 'List Waifu All Fandom'
         ]);
     }
 }
